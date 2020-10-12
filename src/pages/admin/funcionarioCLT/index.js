@@ -135,13 +135,6 @@ export default function CLTListagem() {
         loadClts();
     }, [])
 
-    function order(){
-        return(
-            setClts.sort(clts.nome)            
-        );
-    }
-    
-
     return (
         <div className={classes.root}>
             <MenuAdmin title={'FUNCIONÁRIOS'} />
