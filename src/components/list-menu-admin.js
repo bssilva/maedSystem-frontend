@@ -6,7 +6,6 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import AttachMoney from '@material-ui/icons/AttachMoney';
 import PeopleIcon from '@material-ui/icons/People';
-import Person from '@material-ui/icons/Person';
 import ExitToApp from '@material-ui/icons/ExitToApp';
 
 
@@ -36,17 +35,17 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Funcionários - MEI" />
     </ListItem>
+    <ListItem button component="a" href="/admin/desligados">
+      <ListItemIcon>
+        <PeopleIcon />
+      </ListItemIcon>
+      <ListItemText primary="Desligados" color="red"/>
+    </ListItem>
     <ListItem button component="a" href="/admin/passagem">
       <ListItemIcon>
         <AttachMoney />
       </ListItemIcon>
       <ListItemText primary="Passagens" />
-    </ListItem>
-    <ListItem button component="a" href="/admin/usuarios">
-      <ListItemIcon>
-        <Person />
-      </ListItemIcon>
-      <ListItemText primary="Usuários" />
     </ListItem>
   </div>
 );

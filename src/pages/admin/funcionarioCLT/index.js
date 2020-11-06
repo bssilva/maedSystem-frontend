@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import onEdit from './funcionario.editar';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
@@ -187,7 +188,7 @@ export default function CLTListagem() {
                                                             <TableCell align="center">{row.contaSalario}</TableCell>
                                                             <TableCell align="center">{row.observacao}</TableCell>
                                                             <ButtonGroup aria-label="outlined primary button group">
-                                                                <Button color="primary">Atualizar</Button>
+                                                                <Button onClick={() => {value.onEdit(row._id)}} color="primary">Atualizar</Button>
                                                                 <Button color="secondary">Desligado</Button>
                                                             </ButtonGroup>
                                                         </TableRow>
